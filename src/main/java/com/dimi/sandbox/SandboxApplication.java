@@ -14,7 +14,7 @@ public class SandboxApplication {
 		return string.length() == 0;
 	}
 
-	boolean optimizedMethod(String string) {
-		return string.isEmpty();
+	boolean equalsEmptyString(String string, boolean s) {
+		return string.equals("");
 	}
 }

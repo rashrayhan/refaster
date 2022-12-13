@@ -15,12 +15,17 @@
 	<description>Sample refaster project using Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<version.error-prone>2.9.0</version.error-prone>
+		<version.error-prone>2.16</version.error-prone>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-actuator-autoconfigure</artifactId>
+			<version>2.7.6</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.errorprone</groupId>
@@ -44,6 +49,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<target>11</target>
+					<source>11</source>
+					<release>11</release>
+				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>

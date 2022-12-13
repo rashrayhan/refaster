@@ -1,0 +1,14 @@
+--- SandboxApplication.java
++++ SandboxApplication.java
+@@ -12,9 +12,9 @@
+ 
+ 	boolean lengthEquals0(String string) {
+-		return string.length() == 0;
++		return string.isEmpty();
+ 	}
+ 
+ 	boolean equalsEmptyString(String string, boolean s) {
+-		return string.equals("");
++		return string.isEmpty();
+ 	}
+ }
